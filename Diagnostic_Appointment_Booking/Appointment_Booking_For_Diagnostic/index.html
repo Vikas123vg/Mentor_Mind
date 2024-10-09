@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic Appointment Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="image/Logo1.png" alt="Book-My-Diagnostic" class="logo">
+        <h1>Visu Diagnostic</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#lab-tests">Lab Tests</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#login">Login/Registration</a>
+        </nav>
+    </header>
+    <image src="image/img.jpg" class="diaimg"></image>
+
+    
+
+    <!-- Lab Tests Section -->
+    <section id="lab-tests">
+        <h2>Lab Tests Available</h2>
+        <div class="test-container">
+            <!-- Test 1 -->
+            <div class="test-card">
+                <img src="image/blood.jpg" alt="Blood-test">
+                <h3>Blood Test</h3>
+                <p>Price: ₹200</p>
+                <button onclick="bookTest('Blood Test')">Book Now</button>
+            </div>
+            <!-- Test 2 -->
+            <div class="test-card">
+                <img src="image/urine.jpg" alt="Urine-Test">
+                <h3>Urine Test</h3>
+                <p>Price: ₹300</p>
+                <button onclick="bookTest('Urine Test')">Book Now</button>
+            </div>
+            <!-- Test 3 -->
+            <div class="test-card">
+                <img src="image/covid.jpg" alt="Covid-Test">
+                <h3>Covid Test</h3>
+                <p>Price: ₹200</p>
+                <button onclick="bookTest('Covid Test')">Book Now</button>
+            </div>
+            <!-- Test 4 -->
+            <div class="test-card">
+                <img src="image/xray.jpg" alt="X-ray Test">
+                <h3>X-ray Test</h3>
+                <p>Price: ₹400</p>
+                <button onclick="bookTest('X-ray Test')">Book Now</button>
+            </div>
+
+            <div class="test-card">
+                <img src="image/ct.avif" alt="CT Scan Test">
+                <h3>CT Scan Test</h3>
+                <p>Price: ₹500</p>
+                <button onclick="bookTest('CT Scan Test')">Book Now</button>
+            </div>
+
+            <div class="test-card">
+                <img src="image/mri.avif" alt="MRI Test">
+                <h3>MRI Test</h3>
+                <p>Price: ₹1800</p>
+                <button onclick="bookTest('MRI Test')">Book Now</button>
+            </div>
+
+            <div class="test-card">
+                <img src="image/ut.avif" alt="Ultrasound Test">
+                <h3>Ultrasound Test</h3>
+                <p>Price: ₹800</p>
+                <button onclick="bookTest('Ultrasound Test')">Book Now</button>
+            </div>
+
+            <div class="test-card">
+                <img src="image/ch.avif" alt="Chest X-ray Test">
+                <h3>Chest X-ray Test</h3>
+                <p>Price: ₹600</p>
+                <button onclick="bookTest('Chest X-ray Test')">Book Now</button>
+            </div>
+
+            <div class="test-card">
+                <img src="image/hbac.avif" alt="HBA1C Test">
+                <h3>HBA1C Test</h3>
+                <p>Price: ₹1000</p>
+                <button onclick="bookTest('HBA1C Test')">Book Now</button>
+            </div>
+            
+            <div class="test-card">
+                <img src="image/lft.jpg" alt="Liver Function Test(LFT)">
+                <h3>Liver Function Test(LFT)</h3>
+                <p>Price: ₹900</p>
+                <button onclick="bookTest('Liver Function Test(LFT)')">Book Now</button>
+            </div>
+
+            <div class="test-card">
+                <img src="image/thy.avif" alt="Thyroid Test">
+                <h3>Thyroid Test</h3>
+                <p>Price: ₹1100</p>
+                <button onclick="bookTest('Thyroid Test')">Book Now</button>
+            </div>
+
+            <div class="test-card">
+                <img src="image/kft.avif" alt="Kidney Function Test(KFT)">
+                <h3>Kidney Function Test(KFT)</h3>
+                <p>Price: ₹1000</p>
+                <button onclick="bookTest('Kidney Function Test(KFT)')">Book Now</button>
+            </div>
+
+            <div class="test-card">
+                <img src="image/cbc.jpg" alt="CBC Test">
+                <h3>CBC Test</h3>
+                <p>Price: ₹900</p>
+                <button onclick="bookTest('CBC Test')">Book Now</button>
+            </div>
+
+            <div class="test-card">
+                <img src="image/cal.avif" alt="Calcium Test">
+                <h3>Calcium Test</h3>
+                <p>Price: ₹500</p>
+                <button onclick="bookTest('Calcium Test')">Book Now</button>
+            </div>
+
+            <div class="test-card">
+                <img src="image/l.avif" alt="Liver Function Test">
+                <h3>Liver Function Test</h3>
+                <p>Price: ₹700</p>
+                <button onclick="bookTest('Liver Function Test')">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login & Registration Section -->
+    <section id="login">
+        <h2>Login / Register</h2>
+        <div class="form-container">
+            <!-- Login Form -->
+            <div class="form-box">
+                <h3>Login</h3>
+                <form id="loginForm">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form-box">
+                <h3>Register</h3>
+                <form id="registerForm">
+                    <label for="reg-username">Username</label>
+                    <input type="text" id="reg-username" required>
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: visudiagnostic247@gmail.com</p>
+    <p>Phone: +91 7800525542, 9305683804</p>
+    <p>Address:  Jamuna Nivas, Mohan Nagar,Pimpri Chinchwad,411019<br>
+         Pune, Maharashtra, India</p><br>
+    <h3>Follow Us</h3>
+    <div class="social-media">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="image/Instagram.jpeg" alt="Instagram" class="social-icon"> Instagram
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="image/Facebook.png" alt="Facebook" class="social-icon"> Facebook
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="image/Twitter.png" alt="X" class="social-icon"> X (formerly Twitter)
+        </a>
+    </div>
+</section>
+
+
+    
+
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>The Diagnosis is a worldwide effort created with and led by the global medical community to build an online system that maps the steps to help any patient.
+
+        By combining collective intelligence with machine learning, Diagnosis intends to enable more accurate, affordable, and accessible care for all.</p>
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
